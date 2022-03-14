@@ -1,2 +1,2 @@
 # Swift_UI
-Swift UI를 알아보자 🐣
+Swift UI에 대해 천천히 알아보자 🤔
