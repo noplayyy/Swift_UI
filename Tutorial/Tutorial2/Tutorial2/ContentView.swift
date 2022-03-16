@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
+    let genderType = ["남성", "여성", "비공개"]
+    
     @State var name = ""
-    @State var bornIn = ""
+    @State var bornIn = 0
+    @State var gender = 0
 
     var body: some View {
         NavigationView{
@@ -25,6 +28,13 @@ struct ContentView: View {
                             Text("\(String($0))년생")
                         }
                     }
+                }
+                Section(header: Text("성별")){
+                    Picker("출생년도", selection: $bornIn){
+                        ForEach(0 ..< genderType.count){
+                            Text("\(self.genderType[$0])")
+                        }
+                    }.pickerStyle(SegmentedPickerStyle())
                 }
             }.navigationBarTitle("회원가입")
         }
