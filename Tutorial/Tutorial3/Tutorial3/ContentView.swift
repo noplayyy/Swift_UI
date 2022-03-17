@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20){
             Text("맨위")
-            Spacer()
+            Spacer().frame(height: 5)
             Text("중앙")
             Spacer()
             Text("하단")
