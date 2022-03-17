@@ -9,13 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 20){
-            Text("맨위")
-            Spacer().frame(height: 5)
-            Text("중앙")
-            Spacer()
-            Text("하단")
-        }.background(Color.red)
+        ZStack{
+            Color.yellow.edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
