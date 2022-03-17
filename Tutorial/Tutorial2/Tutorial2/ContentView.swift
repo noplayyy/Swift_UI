@@ -15,6 +15,14 @@ struct ContentView: View {
     @State var bornIn = 0
     @State var gender = 0
 
+    var resultScript:String {
+        if(name.isEmpty){
+            return "이름을 입력하세요."
+        } else {
+            return "\(name)님은 성별이 \(genderType[gender])이며 나이는 \(123-bornIn)입니다."
+        }
+    }
+    
     var body: some View {
         NavigationView{
             Form{
@@ -35,6 +43,9 @@ struct ContentView: View {
                             Text("\(self.genderType[$0])")
                         }
                     }.pickerStyle(SegmentedPickerStyle())
+                }
+                Section(header: Text("결과")){
+                    Text("\(resultScript)")
                 }
             }.navigationBarTitle("회원가입")
         }
