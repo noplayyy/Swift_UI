@@ -12,31 +12,12 @@ struct ContentView: View {
         ZStack{
             AngularGradient(gradient: Gradient(colors:[.red, .orange,.yellow,.green, .blue, .purple]), center: .center).edgesIgnoringSafeArea(.all)
             VStack{
-                HStack{
-                    Text("11시")
-                    Spacer()
-                    Text("12시")
-                    Spacer()
-                    Text("1시")
-                }
+                CustomHStack(t1: "11시", t2: "12시", t3: "1시")
                 Spacer()
-                HStack{
-                    Text("9시")
-                    Spacer()
-                    Text("중앙")
-                    Spacer()
-                    Text("3시")
-                }
+                CustomHStack(t1: "9시", t2: "중앙", t3: "3시")
                 Spacer()
-                HStack{
-                    Text("7시")
-                    Spacer()
-                    Text("6시")
-                    Spacer()
-                    Text("5시")
-                }
+                CustomHStack(t1: "7시", t2: "6시", t3: "5시")
             }
-            
         }
     }
 }
