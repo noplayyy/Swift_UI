@@ -11,6 +11,8 @@
 		AAD7E98A27EC5D2800AD1043 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7E98927EC5D2800AD1043 /* ContentView.swift */; };
 		AAD7E98C27EC5D2900AD1043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD7E98B27EC5D2900AD1043 /* Assets.xcassets */; };
 		AAD7E98F27EC5D2900AD1043 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD7E98E27EC5D2900AD1043 /* Preview Assets.xcassets */; };
+		AAD7E99627EC5E9D00AD1043 /* DogMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7E99527EC5E9D00AD1043 /* DogMaker.swift */; };
+		AAD7E99827EC605400AD1043 /* DogMakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7E99727EC605400AD1043 /* DogMakerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		AAD7E98927EC5D2800AD1043 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAD7E98B27EC5D2900AD1043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAD7E98E27EC5D2900AD1043 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAD7E99527EC5E9D00AD1043 /* DogMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogMaker.swift; sourceTree = "<group>"; };
+		AAD7E99727EC605400AD1043 /* DogMakerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogMakerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		AAD7E98627EC5D2800AD1043 /* Tutorial4 */ = {
 			isa = PBXGroup;
 			children = (
+				AAD7E99727EC605400AD1043 /* DogMakerCell.swift */,
 				AAD7E98727EC5D2800AD1043 /* Tutorial4App.swift */,
 				AAD7E98927EC5D2800AD1043 /* ContentView.swift */,
 				AAD7E98B27EC5D2900AD1043 /* Assets.xcassets */,
 				AAD7E98D27EC5D2900AD1043 /* Preview Content */,
+				AAD7E99527EC5E9D00AD1043 /* DogMaker.swift */,
 			);
 			path = Tutorial4;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD7E99627EC5E9D00AD1043 /* DogMaker.swift in Sources */,
 				AAD7E98A27EC5D2800AD1043 /* ContentView.swift in Sources */,
 				AAD7E98827EC5D2800AD1043 /* Tutorial4App.swift in Sources */,
+				AAD7E99827EC605400AD1043 /* DogMakerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

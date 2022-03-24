@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // 더미로 만든 데이터를 가져온다.
+    let dogMakers = DogMaker.all()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+        //list와 id값을 인자로 lambda식으로 데이터 값에 맞추어 View를 리턴한다.
+        NavigationView {
+            List(self.dogMakers, id: \.name) { dogMakers in
+                NavigationLink(destination: Text(dogMakers.name)){
+                    DogMakerCell(dogMaker: dogMakers)
+                }
+            }.navigationTitle("강아지")
+        }
+   }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
