@@ -22,7 +22,12 @@ struct DogMarkerDetail: View {
                     self.isPresent = true
                 })
             Text(dogMaker.name)
-        }
+            // $를 추가하면 isPresent를 Binding<Bool> 형태로 받는다.
+        }.alert(isPresented: $isPresent, content: {
+            //화면에 Alert를 띄운다.
+            Alert(title: Text("더블클릭"), message: Text("하셨습니다!"), dismissButton: .default(Text("OK")))
+        })
+
     }
 }
 
