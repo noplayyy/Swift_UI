@@ -16,10 +16,10 @@ struct ContentView: View {
         //list와 id값을 인자로 lambda식으로 데이터 값에 맞추어 View를 리턴한다.
         NavigationView {
             List(self.dogMakers, id: \.name) { dogMakers in
-                NavigationLink(destination: Text(dogMakers.name)){
+                NavigationLink(destination: DogMarkerDetail(dogMaker: dogMakers)){
                     DogMakerCell(dogMaker: dogMakers)
                 }
-            }.navigationTitle("강아지")
+            }.navigationBarTitle("강아지", displayMode: .inline)
         }
    }
 }
